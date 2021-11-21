@@ -16,7 +16,7 @@ public class Armstrong_10 {
 			c= c/10;
 		}
 	if (s==num){
-		System.out.println("given no. is Armstrong");
+		System.out.println("given no. is Armstrong " + s);
 	}
 	else{
 		System.out.println("Given no. is not Armstrong");

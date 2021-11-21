@@ -14,6 +14,7 @@ public class TestMarksheet {
 		a.setPhy(70);
 		a.setChe(75);
 		a.setMat(80);
+		
 		Marksheet b = new Marksheet();
 		b.setRollNo("113");
 		b.setFname("Vipin");
@@ -46,24 +47,23 @@ public class TestMarksheet {
 		e.setChe(77);
 		e.setMat(88);
 
-		ArrayList<Marksheet> f= new ArrayList<Marksheet>();
+		ArrayList<Marksheet> f = new ArrayList<Marksheet>();
 		f.add(a);
 		f.add(b);
 		f.add(c);
 		f.add(d);
 		f.add(e);
-	TestComparator_Fname fn = new TestComparator_Fname();
-	//TestComprator_Lname ln = new TestComprator_Lname();
-	TestComprator_Phy ph = new TestComprator_Phy();
-	Collections.sort(f,ph);
-		
-Iterator<Marksheet> it = f.iterator();
-while (it.hasNext()) {
-	Marksheet o = (Marksheet) it.next();
-	System.out.println(o.getRollNo()+" "+ o.getFname()+" "+ o.getLname()+" "+o.getPhy()+" "+o.getChe()+" "+o.getMat());
-}
-			}
-	
-		
-	
+		TestComparator_Fname fn = new TestComparator_Fname();
+		// TestComprator_Lname ln = new TestComprator_Lname();
+		TestComprator_Phy ph = new TestComprator_Phy();
+		Collections.sort(f, ph);
+
+		Iterator<Marksheet> it = f.iterator();
+		while (it.hasNext()) {
+			Marksheet o = (Marksheet) it.next();
+			System.out.println(o.getRollNo() + " " + o.getFname() + " " + o.getLname() + " " + o.getPhy() + " "
+					+ o.getChe() + " " + o.getMat());
+		}
+	}
+
 }
