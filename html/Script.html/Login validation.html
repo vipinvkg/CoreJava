@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        function valid(frm) {
+            var flag = true;
+            if(frm.login.value==' '){
+                alert("loin id Can't be null");
+            flag = false
+            }
+            if(frm.pass.value== ' ') {
+                alert("Password can't be null");
+            flag = false
+            }
+        return flag;
+        }
+    </script>
+
+</head>
+
+<body>
+    <form action="">
+        User ID:<input type="text" name="login">
+        Password: <input type="password" name="pass">
+        <input type="button" value="Submit" onclick="Valid(this.form)">
+    </form>
+
+</body>
+
+</html>

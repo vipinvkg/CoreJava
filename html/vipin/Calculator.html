@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function sumvalue(frm) {
+
+            var n1 = parseInt(frm.num1.value);
+            var n2 = parseInt(frm.num2.value);
+            frm.sum.value = n1 + n2;
+
+            return frm.sum.value;
+        }
+
+        function subs(abs) {
+
+            var a1 = parseInt(abs.v1.value);
+            var a2 = parseInt(abs.v2.value);
+            abs.substract.value = a1 - a2;
+
+            return abs.substract.value;
+        }
+        function multi(abc) {
+
+            var b1 = parseInt(abc.x1.value);
+            var b2 = parseInt(abc.x2.value);
+            abc.Multip.value = b1 * b2;
+
+            return abc.Multip.value;
+        }
+        function devi(abd) {
+
+            var c1 = parseInt(abd.y1.value);
+            var c2 = parseInt(abd.y2.value);
+            abd.dev.value = c1 / c2;
+
+            return abd.dev.value;
+        }
+
+    </script>
+</head>
+
+<center>
+
+    <body style="background-color: ghostwhite;">
+
+        <u>
+            <H1>
+                <font color="Green">Let's Calculate</font>
+            </H1>
+        </u>
+        <br>
+        <form>
+            <table border="1" style="border: solid;">
+                <tr align="center">
+                    <td> <input type="text" name="num1"> +</td>
+                    <td><input type="text" name="num2"> =</td>
+                    <td><input type="text" name="sum"></td>
+                    <td><input type="button" value="Add" onclick="sumvalue(this.form)"></td>
+                </tr>
+                <tr align="center">
+                    <td> <input type="text" name="v1"> -</td>
+                    <td><input type="text" name="v2"> =</td>
+                    <td><input type="text" name="substract"></td>
+                    <td><input type="button" value="Minus" onclick="subs(this.form)"></td>
+                </tr>
+                <tr align="center">
+                    <td> <input type="text" name="x1"> *</td>
+                    <td><input type="text" name="x2"> =</td>
+                    <td><input type="text" name="Multip"></td>
+                    <td><input type="button" value="Multiply" onclick="multi(this.form)"></td>
+                </tr>
+                <tr align="center">
+                    <td> <input type="text" name="y1"> /</td>
+                    <td><input type="text" name="y2"> =</td>
+                    <td><input type="text" name="dev"></td>
+                    <td><input type="button" value="Devide" onclick="devi(this.form)"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</center>
+
+</html>

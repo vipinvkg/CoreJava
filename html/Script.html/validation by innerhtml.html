@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    span{
+        font: small;
+        color:red;
+    }
+</style>
+<script src="Validation.js"></script>
+
+</head>
+<body>
+    <form onsubmit="return validate(this)">
+        <table>
+            <tr>
+        <td> Login ID: <input type="text" name="login"> <span id=lcheck></span></td></tr>
+    </tr><br>
+    <br>
+     <tr><td>Password <input type="text" name="pass"> <span id=pcheck></span></td></tr>
+        <tr>
+        <td><input type="submit" value="Submit" ></td></tr>
+    </table>
+    </form>
+
+</body>
+</html>

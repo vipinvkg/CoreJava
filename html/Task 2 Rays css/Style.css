@@ -33,3 +33,10 @@ border-radius: 5px;
 border-width: 2px 2px 2px 5px;
 border-color:rgb(12, 238, 68);
 }
+a{
+
+    display: block;
+    padding: 0px 0px;
+    color: black;
+    text-decoration: none;
+}

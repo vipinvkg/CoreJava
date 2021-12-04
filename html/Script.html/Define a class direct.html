@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class shape {
+            color = "";
+            borderwidth = 0;
+           
+
+            constructor(color, borderwidth) {
+                this.color = color;
+                this.borderwidth = borderwidth;
+            }
+        methodvalues(){
+            document.write(this.color+" "+this.borderwidth + "<br>");
+        }
+       
+        }
+        
+        var s = new shape ("Red",10);
+        s.methodvalues();
+
+        
+
+        class round {
+            border = "";
+            size = 0;
+            cap = "";
+
+            constructor(border,size,cap){
+            this.border = border;
+            this.size = size;
+            this.cap = cap;
+        }
+        methodnew(){
+            document.write(this.border + " " + this.size + " " + this.cap);
+        }
+    }
+
+        var t = new round ("Blue",10,"kite")
+        t.methodnew();
+
+        
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

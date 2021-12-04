@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+     function employee(name, age, salary) {
+            this.name = name;
+            this.age = age;
+            this.salary = salary;
+            let bonus = 2000;
+
+            this.getemployeedetails = function () {
+                document.write("Name" + this.name + "age" + this.age );
+            }
+        this.finalsalary = function (){
+            let finalsalary = salary + bonus;
+            document.write("final salary---" + finalsalary );
+        }
+        }
+        var emp = new employee("vipin", 27, 50000);
+        emp.bonus=5000;
+        emp.getemployeedetails();
+        emp.finalsalary();
+</script>
+</head>
+<body>
+    
+</body>
+</html>

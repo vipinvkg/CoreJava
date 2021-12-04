@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            font: small;
+            color: red;
+        }
+    </style>
+    <script>
+        function validate(abc) {
+            var flag = true;
+            if (abc.fname.value == '') {
+                document.getElementById("fncheck").innerHTML = "First name is required*"
+                flag = false;
+            }
+            if (abc.lname.value == '') {
+                document.getElementById("lncheck").innerHTML = "Last name is required*"
+                flag = false;
+            }
+            if (abc.passw.value == '') {
+                document.getElementById("pscheck").innerHTML = "Password is required*"
+                flag = false;
+            }
+            if (abc.cnpass.value == '') {
+                document.getElementById("cncheck").innerHTML = "Password is required*"
+                flag = false;
+            }
+
+            if (abc.mail.value == '') {
+                document.getElementById("mailheck").innerHTML = "Email id is required*"
+                flag = false;
+
+            }
+            if (abc.dob.value == '') {
+                document.getElementById("dobcheck").innerHTML = "DOB is required*"
+                flag = false;
+            }
+
+            if (abc.drop.value == '') {
+                document.getElementById("dropchk").innerHTML = "Gender is required*"
+                flag = false;
+            }
+            return flag;
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <form onsubmit="return validate(this)">
+            <table width="100%">
+                <tr>
+                    <td>
+                        <h4> Hi, Guest</h4>
+                    </td>
+                    <td><img src="Rays logo.png" align="right"></td>
+                </tr>
+            </table>
+            <hr>
+
+            <h1>User Registration</h1>
+            <table width="60%">
+                <tr>
+                    <td width="30%" text align="right"> First Name*</td>
+                    <td width=40%> <input type="text" name="fname"><span id=fncheck></span></td>
+                </tr>
+                <tr>
+                    <td width="30%" text align="right"> Last Name*</td>
+                    <td width="40%"><input type="text" name="lname"><span id=lncheck></span></td>
+                </tr>
+                <tr>
+                    <td width="30%" text align="right"> Login ID*</td>
+                    <td width=40%><input type="email" name="mail"><span id=mailheck></span></td>
+                </tr>
+                <tr>
+                    <td width="30%" text align="right"> Password*</td>
+                    <td width=40%><input type="password" name="passw"><span id=pscheck></span></td>
+                </tr>
+                <tr>
+                    <td width="30%" text align="right"> Confirm Password*</td>
+                    <td width=40%><input type="password" name="cnpass"><span id=cncheck></span></td>
+                </tr>
+                <tr>
+                    <td width="30%" text align="right"> Gender*</td>
+                    <td width="40%"><select name="drop">
+                            <option value="">Select</option>
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                        </select> <span id=dropchk></span></td>
+                </tr>
+
+                <tr>
+                    <td width="30%" text align="right"> Date of Birth*</td>
+                    <td width=40%><input type="date" name="dob"><span id=dobcheck></span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td width="40%" text align="left"><input type="submit" value="Submit"></td>
+                </tr>
+            </table>
+        </form>
+    </center>
+    <hr>
+    <h5>
+        <center> © Copyright SunilOS Infotech Pvt Ltd.</center>
+    </h5>
+
+</body>
+
+</html>
