@@ -8,6 +8,8 @@ public class Parse_String {
 		int a = Integer.parseInt(s);
 		int b = Integer.parseInt(s1);
 		
-		System.out.println(a+b);
+		long c = Long.parseLong(s);
+		short d = Short.parseShort(s1);
+		System.out.println(d+c);
 	}
 }

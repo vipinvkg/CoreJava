@@ -2,7 +2,7 @@ package Exercise_4;
 
 public class Reversedigits_5 {
 	public static void main(String[] args) {
-String s = "vipin";
+String s = "vipin kumar gupta";
 char[]ch= s.toCharArray();
 String rev = "";
 

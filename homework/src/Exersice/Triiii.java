@@ -3,23 +3,16 @@ package Exersice;
 public class Triiii {
 public static void main(String[] args) {
 
-	int primeN = 11;
+	int primeN= 11;
 	
-	for (int i = 2; i <primeN; i++) {
-
-
-		if(primeN%i ==0){
-			
-			System.out.println(primeN + "is not prime no.");
-		
-		break;
+		if (primeN%2 ==0) {
+			System.out.print("is not a prime no.");
+		} else {
+System.out.print("is a prime no.");
 		}
+		}
+	
 	}
 	
-	{
-			System.out.println(primeN + "is a prime no.");
-		}
-	}
-	
-}
+
 

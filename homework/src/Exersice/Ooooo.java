@@ -2,18 +2,16 @@ package Exersice;
 
 public class Ooooo {
 public static void main(String[] args) {
-	int num = 153;
-	int rev = 0;
-	int rem = 0;
+
+String s = "Gupta";
+char [] ch = s.toCharArray();
+String rev = "";
+
+for (int i = ch.length-1; i>=0; i--) {
 	
-	while(num!=0){
-		
-		rev = num%0;
-		rev = rev*10 +rem;
-		num = num/10;
-		
-		System.out.println(rev);
-	}
-	
+	rev = rev+ch[i];
 }
+System.out.println(rev);
+}
+
 }
