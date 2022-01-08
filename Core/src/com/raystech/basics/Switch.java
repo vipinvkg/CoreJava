@@ -6,7 +6,7 @@ public class Switch {
 	
 		char c = 'p';
 		
-		switch (c) {
+		switch ('a') {
 		case 'a':
 			System.out.println("its Vowel");
 			break;

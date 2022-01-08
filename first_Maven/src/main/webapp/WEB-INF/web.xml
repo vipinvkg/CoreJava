@@ -1,0 +1,37 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+	<servlet>
+		<servlet-name>ForgotPasswordCTL</servlet-name>
+		<display-name>ForgotPasswordCTL</display-name>
+		<description></description>
+		<servlet-class>com.raystec.ForgotPasswordCTL</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>RegistrationCTL</servlet-name>
+		<display-name>RegistrationCTL</display-name>
+		<description></description>
+		<servlet-class>com.raystec.RegistrationCTL</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>HeaderCTL</servlet-name>
+		<display-name>HeaderCTL</display-name>
+		<description></description>
+		<servlet-class>com.raystec.HeaderCTL</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ForgotPasswordCTL</servlet-name>
+		<url-pattern>/ForgotPasswordCTL</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RegistrationCTL</servlet-name>
+		<url-pattern>/RegistrationCTL</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>HeaderCTL</servlet-name>
+		<url-pattern>/HeaderCTL</url-pattern>
+	</servlet-mapping>
+</web-app>
