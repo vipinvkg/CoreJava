@@ -18,6 +18,7 @@ public class Copycon_Command {
 		InputStreamReader isReader = new InputStreamReader(System.in);
 		BufferedReader in = new BufferedReader(isReader);
 		
+		System.out.println("Start....");
 		String line = in.readLine();
 		while (!line.equals("quit")) {//can write in console untill you dont type quit & it will save into target file.
 			printwriter.print(line);

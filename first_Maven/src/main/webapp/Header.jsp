@@ -1,3 +1,4 @@
+<%@page import="com.raystec.RegistrationBean"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -7,14 +8,29 @@
 <title>Insert title here</title>
 </head>
 <body>
-<Form action="HeaderCTL" method="post">
+
  <table border="0" width="100%">
-            <tr><td width="80%"><p><a href="LoginView.jsp">Home</a></p></td>
+            <tr><td width="80%"><p><a href="LoginView.jsp">Home</a>
+           <%String fn =(String)session.getAttribute("myname");
+            if(fn!=null){%>
+            <h3>Welcome,<%=fn %></h3>
+            <%
+            }else{
+            %>
+            <h3>Welcome,Guest</h3>
+            <% }%>
+                      </p>
             </td>
+          
             <td><img src="Rays logo.png" align="right"></td>
+            
+            
         </tr>
     </table>
     <hr>
+    
+    <% String hide = (String)request.getAttribute("Fname");
+    if(hide!=null){ %>
     <div name="hde">
     <font size= "3"><a href="GetMarksheet.html" Target="_blank"> Get Marksheet | </a>
     <a href="Marksheet Merit List.html" Target="_blank"> Marksheet Merit List | </a>
@@ -32,6 +48,8 @@
 
 </font>
 <hr></div>
-</Form>
+<a href="Logout.jsp">Logout</a>
+<%} %>
+  
 </body>
 </html>

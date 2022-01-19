@@ -4,34 +4,34 @@
 
 <web-app>
 	<display-name>Archetype Created Web Application</display-name>
-	<servlet>
-		<servlet-name>ForgotPasswordCTL</servlet-name>
-		<display-name>ForgotPasswordCTL</display-name>
+	<filter>
+		<filter-name>FrontCtl</filter-name>
+		<display-name>FrontCtl</display-name>
 		<description></description>
-		<servlet-class>com.raystec.ForgotPasswordCTL</servlet-class>
+		<filter-class>com.raystec.FrontCtl</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>FrontCtl</filter-name>
+		<url-pattern>/FrontCtl</url-pattern>
+	</filter-mapping>
+	<servlet>
+		<servlet-name>StudentCtl</servlet-name>
+		<display-name>StudentCtl</display-name>
+		<description></description>
+		<servlet-class>com.raystec.Studentmgt.StudentCtl</servlet-class>
 	</servlet>
 	<servlet>
-		<servlet-name>RegistrationCTL</servlet-name>
-		<display-name>RegistrationCTL</display-name>
+		<servlet-name>GetCtl</servlet-name>
+		<display-name>GetCtl</display-name>
 		<description></description>
-		<servlet-class>com.raystec.RegistrationCTL</servlet-class>
-	</servlet>
-	<servlet>
-		<servlet-name>HeaderCTL</servlet-name>
-		<display-name>HeaderCTL</display-name>
-		<description></description>
-		<servlet-class>com.raystec.HeaderCTL</servlet-class>
+		<servlet-class>com.raystec.Studentmgt.GetCtl</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>ForgotPasswordCTL</servlet-name>
-		<url-pattern>/ForgotPasswordCTL</url-pattern>
+		<servlet-name>StudentCtl</servlet-name>
+		<url-pattern>/StudentCtl</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
-		<servlet-name>RegistrationCTL</servlet-name>
-		<url-pattern>/RegistrationCTL</url-pattern>
+		<servlet-name>GetCtl</servlet-name>
+		<url-pattern>/GetCtl</url-pattern>
 	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>HeaderCTL</servlet-name>
-		<url-pattern>/HeaderCTL</url-pattern>
-	</servlet-mapping>
-</web-app>
+	</web-app>

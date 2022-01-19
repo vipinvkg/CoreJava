@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+<%@ page errorPage="ExceptionHandler.jsp" language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
@@ -8,7 +8,7 @@
 </head>
 <body>
 <%@include file = "Header.jsp" %>
-	<form action="LoginCtl" method="post">
+	<form action="Login_CTL" method="post">
 		<h2>
 			<center>Login</center>
 		</h2>
@@ -17,9 +17,13 @@
 			String error = (String)request.getAttribute("err");
 			String errorl= (String)request.getAttribute("loginreq");
 			String errorp= (String)request.getAttribute("passreq");
+			String fterr= (String) request.getAttribute("ft");
 			if(error!=null){
 			%>
-			<center> <font color="red"> <h3>invalid</h3></font></center>
+			<%if(fterr!=null){ %>
+			<center> <font color="red"> <h3><%=fterr %></h3></font></center>
+			<%} %>
+			<center> <font color="red"> <h3><%=error %></h3></font></center>
 			<%} %>
 			
 		
