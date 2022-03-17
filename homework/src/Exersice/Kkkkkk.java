@@ -3,11 +3,11 @@ package Exersice;
 public class Kkkkkk {
 public static void main(String[] args) {
 
-	int n = 100;
-	for (int i = 1; i <=n; i++) {
+	int n = 2;
+	for (int i = 1; i <=10; i++) {
 	
 
-		System.out.print(i + "\t");
+		System.out.println(n + "*" + i + "=" + n * i);
 	}
 
 }

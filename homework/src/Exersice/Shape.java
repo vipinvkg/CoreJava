@@ -5,19 +5,22 @@ public class Shape {
 	private int borderwidth;
 	private String color;
 	
-	public Shape() {
-		//System.out.println("this is default");
-	}
-		public Shape (int b,String c) {
-			borderwidth = b;
-			color = c;
-		}
 	
+	public void setBorderwidth(int borderwidth) {
+		this.borderwidth = borderwidth;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
 	public int getBorderwidth() {
 		return borderwidth;
 	}
 	public String getColor() {
 		return color;
 	}
+public double area() {
+	return 0.0;
+
+}
 }
 

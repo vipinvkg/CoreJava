@@ -3,12 +3,19 @@ package Exersice;
 public class Triiii {
 public static void main(String[] args) {
 
-	int primeN= 11;
+	int primeN= 9;
+ int Temp =0;
 	
-		if (primeN%2 ==0) {
-			System.out.print("is not a prime no.");
+	for (int i = 2; i < primeN; i++) {
+		
+		if (primeN%i==0) {
+			Temp = Temp + 1;
+		}
+	}
+		if (Temp==0) {
+			System.out.print("is a prime no.");
 		} else {
-System.out.print("is a prime no.");
+System.out.print("is not a prime no.");
 		}
 		}
 	

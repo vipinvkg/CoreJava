@@ -1,0 +1,77 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>StudentCtl</servlet-name>
+  	<display-name>StudentCtl</display-name>
+  	<description></description>
+  	<servlet-class>com.raystec.Studentmgt.StudentCtl</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ForgotPasswordCTL</servlet-name>
+  	<display-name>ForgotPasswordCTL</display-name>
+  	<description></description>
+  	<servlet-class>com.raystec.ForgotPasswordCTL</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>RegistrationCTL</servlet-name>
+  	<display-name>RegistrationCTL</display-name>
+  	<description></description>
+  	<servlet-class>com.raystec.RegistrationCTL</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>processCTL</servlet-name>
+  	<display-name>processCTL</display-name>
+  	<description></description>
+  	<servlet-class>com.raystec.processCTL</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>TestCookies_CTL</servlet-name>
+  	<display-name>TestCookies_CTL</display-name>
+  	<description></description>
+  	<servlet-class>com.raystec.TestCookies_CTL</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ProcessCTL</servlet-name>
+  	<display-name>ProcessCTL</display-name>
+  	<description></description>
+  	<servlet-class>com.raystec.ProcessCTL</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>BaseCtl</servlet-name>
+  	<display-name>BaseCtl</display-name>
+  	<description></description>
+  	<servlet-class>com.raystec.project4.controller.BaseCtl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>StudentCtl</servlet-name>
+  	<url-pattern>/StudentCtl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ForgotPasswordCTL</servlet-name>
+  	<url-pattern>/ForgotPasswordCTL</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RegistrationCTL</servlet-name>
+  	<url-pattern>/RegistrationCTL</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>processCTL</servlet-name>
+  	<url-pattern>/processCTL</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>TestCookies_CTL</servlet-name>
+  	<url-pattern>/TestCookies_CTL</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ProcessCTL</servlet-name>
+  	<url-pattern>/ProcessCTL</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>BaseCtl</servlet-name>
+  	<url-pattern>/BaseCtl</url-pattern>
+  </servlet-mapping>
+</web-app>

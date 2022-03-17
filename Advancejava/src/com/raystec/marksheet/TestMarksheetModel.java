@@ -4,12 +4,12 @@ public class TestMarksheetModel {
 
 	public static void main(String[] args) throws Exception {
 		
-		testadd();
+		//testadd();
 		//testUpdate();
 		//delete();
 		//testget();
 		//testsearch();
-		//testgetmaritlist();
+		testgetmaritlist();
 		
 	}
 
